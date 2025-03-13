@@ -2,6 +2,7 @@ import { INavigationModel, IRouteConfig, IRouteContext } from "@aurelia/router-l
 import { customElement, inject } from "aurelia";
 import { FeatureBrowse } from "../browse/feature-browse";
 import { FeatureGuard } from "../guard/feature-guard";
+import { FeatureLoad } from "../load/feature-load";
 import { FeatureWorkspace } from "../workspace/feature-workspace";
 
 @customElement("feature-shell")
@@ -20,10 +21,10 @@ export class FeatureShell {
   public getRouteConfig(): IRouteConfig {
     return {
       routes: [
-        { path: "", redirectTo: "browse" },
+        //{ path: "", redirectTo: "browse" },
         {
           id: "feature-browse-id",
-          path: "browse",
+          path: ["", "browse"],
           title: "Browse",
           component: FeatureBrowse,
           nav: true,
@@ -41,6 +42,13 @@ export class FeatureShell {
           title: "Guard",
           component: FeatureGuard,
           nav: true,
+        },
+        {
+          id: "feature-load-id",
+          path: "load",
+          title: "Load",
+          component: FeatureLoad,
+          nav: false,
         },
       ],
     };

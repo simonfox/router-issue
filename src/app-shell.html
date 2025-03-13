@@ -1,4 +1,4 @@
 <div class="message">${message}</div>
 <a repeat.for="route of navigation.routes"
-   href.to-view="route.path"></a>
+   href.to-view="route.path | firstNonEmpty"></a>
 <au-viewport></au-viewport>

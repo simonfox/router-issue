@@ -19,10 +19,10 @@ export class AppShell {
   public getRouteConfig(): IRouteConfig {
     return {
       routes: [
-        { path: "", redirectTo: "feature" },
+        //{ path: "", redirectTo: "feature" },
         {
           id: "feature-id",
-          path: "feature",
+          path: ["", "feature"],
           component: FeatureShell,
         }
       ],
