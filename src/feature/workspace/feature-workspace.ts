@@ -11,7 +11,8 @@ export class FeatureWorkspace {
   canLoad() {
     if (!loaded) {
       loaded = true;
-      return "feature/load";
+      //return "feature/load";
+      return { component: "feature-id/feature-load-id" };
     }
     else
       return true;

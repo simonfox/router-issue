@@ -41,7 +41,20 @@ const dr = dumber({
   // prepend: [],
 
   // Explicit dependencies, can use either "deps" (short name) or "dependencies" (full name).
-  // deps: [],
+  // deps: [
+  //   { name: 'aurelia', location: '../aurelia/packages/aurelia' },
+  //   { name: '@aurelia/router-lite', location: '../aurelia/packages/router-lite' },
+  //   { name: '@aurelia/expression-parser', location: '../aurelia/packages/expression-parser' },
+  //   { name: '@aurelia/fetch-client', location: '../aurelia/packages/fetch-client' },
+  //   { name: '@aurelia/kernel', location: '../aurelia/packages/kernel' },
+  //   { name: '@aurelia/metadata', location: '../aurelia/packages/metadata' },
+  //   { name: '@aurelia/platform', location: '../aurelia/packages/platform' },
+  //   { name: '@aurelia/platform-browser', location: '../aurelia/packages/platform-browser' },
+  //   { name: '@aurelia/route-recognizer', location: '../aurelia/packages/route-recognizer' },
+  //   { name: '@aurelia/runtime', location: '../aurelia/packages/runtime' },
+  //   { name: '@aurelia/runtime-html', location: '../aurelia/packages/runtime-html' },
+  //   { name: '@aurelia/template-compiler', location: '../aurelia/packages/template-compiler' },
+  // ],
 
   // Code split is intuitive and flexible.
   // https://dumber.js.org/options/code-split
