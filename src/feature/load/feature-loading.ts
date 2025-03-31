@@ -2,22 +2,22 @@ import { IRouter } from "@aurelia/router-lite";
 import { customElement, inject } from "aurelia";
 
 @inject(IRouter)
-@customElement("feature-load")
-export class FeatureLoad {
+@customElement("feature-loading")
+export class FeatureLoading {
   constructor(
     private readonly _router: IRouter,
   ) { }
 
-  loading() {
+  loading(params: { id: number }) {
     const doActivate = async () => {
-      // simulate loading data
+      console.log("loading component: ", params);
       const p = new Promise<void>(resolve => {
         setTimeout(() => resolve(), 1000);
       });
       await p;
 
-      const path = "feature/workspace";
-      this._router.load(path);
+      const path = "feature/2";
+      this._router.load(path, { transitionPlan: "replace" });
     };
     doActivate();
   }

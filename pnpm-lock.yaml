@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@aurelia/route-recognizer':
+        specifier: link:..\aurelia\packages\route-recognizer
+        version: link:../aurelia/packages/route-recognizer
       '@aurelia/router-lite':
-        specifier: 2.0.0-beta.23
-        version: 2.0.0-beta.23
+        specifier: link:..\aurelia\packages\router-lite
+        version: link:../aurelia/packages/router-lite
       aurelia:
-        specifier: latest
-        version: 2.0.0-beta.23
+        specifier: link:..\aurelia\packages\aurelia
+        version: link:../aurelia/packages/aurelia
     devDependencies:
       '@aurelia/plugin-gulp':
         specifier: latest
@@ -112,10 +115,6 @@ packages:
     resolution: {integrity: sha512-/vY9Wag+TiOSu6qYlt+5PSUSt8N2TYS7qS09ihi+zgJld+KKYeJN+0/VgDKxDgIVXG/sQM9ZvAwUf4EhJVVk3Q==}
     engines: {node: '>=20.16.0'}
 
-  '@aurelia/fetch-client@2.0.0-beta.23':
-    resolution: {integrity: sha512-eT5THfL6dL2y4B7wgK0JXDXXyfy9K/o3/OhsX117nNJMv4LI3SUlQ5dAtjuHXrE8U3GK5kOGHT4GuQj1GpnPVA==}
-    engines: {node: '>=20.16.0'}
-
   '@aurelia/kernel@2.0.0-beta.23':
     resolution: {integrity: sha512-JwaMfoPPIRZ+QxZMU61zBgVkcvTYHnp6UjxApiMIdS/KaJ6KRu4hhWHhRkSPHN4XsslT9HkNeUjumoZ9hPA9AA==}
     engines: {node: '>=20.16.0'}
@@ -138,14 +137,6 @@ packages:
 
   '@aurelia/plugin-gulp@2.0.0-beta.23':
     resolution: {integrity: sha512-VCODj6LL5ZY2DEx9sGDBFkWX9H3oEwmkhrhJYeMFYuYxLuq0cTLrLPrThghTH6jVzdsL6ZiMcM9Ets6uBOy3ag==}
-    engines: {node: '>=20.16.0'}
-
-  '@aurelia/route-recognizer@2.0.0-beta.23':
-    resolution: {integrity: sha512-hCjaTgiUoBIxsOMojXuNXUKMA6QZUkXMJ/fi2Q+zjV1hIQJNA2Of1Blzyd9VVupZyXjiwLnYN9O021o6YPfqzQ==}
-    engines: {node: '>=20.16.0'}
-
-  '@aurelia/router-lite@2.0.0-beta.23':
-    resolution: {integrity: sha512-Z169OvHmw2I7O5zhTPbD7mcJWNYBHz2Tu/j6bgibGMuXKDDxHRXTz4mH+8MrnqfT/FP0ufbCkhHO9pdkrZ8+KQ==}
     engines: {node: '>=20.16.0'}
 
   '@aurelia/runtime-html@2.0.0-beta.23':
@@ -613,10 +604,6 @@ packages:
     resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
     engines: {node: '>= 4.5.0'}
     hasBin: true
-
-  aurelia@2.0.0-beta.23:
-    resolution: {integrity: sha512-5YeacFF3e+QSTW9MzogpxOKbwTuOKA54tykQRqmuOPw5l9qZy/22NVwKvrR3AmX7H1BdtkR/pEVfH9u6/x9D5g==}
-    engines: {node: '>=20.16.0'}
 
   autoprefixer@10.4.21:
     resolution: {integrity: sha512-O+A6LWV5LDHSJD3LjHYoNi4VLsj/Whi7k6zG12xTYaU4cQ8oxQGckXNX8cRHK5yOZ/ppVHe0ZBXGzSV9jXdVbQ==}
@@ -3119,11 +3106,6 @@ snapshots:
     dependencies:
       '@aurelia/kernel': 2.0.0-beta.23
 
-  '@aurelia/fetch-client@2.0.0-beta.23':
-    dependencies:
-      '@aurelia/kernel': 2.0.0-beta.23
-      '@aurelia/metadata': 2.0.0-beta.23
-
   '@aurelia/kernel@2.0.0-beta.23':
     dependencies:
       '@aurelia/metadata': 2.0.0-beta.23
@@ -3158,18 +3140,6 @@ snapshots:
       '@aurelia/plugin-conventions': 2.0.0-beta.23
       '@aurelia/runtime': 2.0.0-beta.23
       vinyl: 2.2.1
-
-  '@aurelia/route-recognizer@2.0.0-beta.23': {}
-
-  '@aurelia/router-lite@2.0.0-beta.23':
-    dependencies:
-      '@aurelia/kernel': 2.0.0-beta.23
-      '@aurelia/metadata': 2.0.0-beta.23
-      '@aurelia/platform': 2.0.0-beta.23
-      '@aurelia/platform-browser': 2.0.0-beta.23
-      '@aurelia/route-recognizer': 2.0.0-beta.23
-      '@aurelia/runtime': 2.0.0-beta.23
-      '@aurelia/runtime-html': 2.0.0-beta.23
 
   '@aurelia/runtime-html@2.0.0-beta.23':
     dependencies:
@@ -3636,18 +3606,6 @@ snapshots:
       async-done: 1.3.2
 
   atob@2.1.2: {}
-
-  aurelia@2.0.0-beta.23:
-    dependencies:
-      '@aurelia/expression-parser': 2.0.0-beta.23
-      '@aurelia/fetch-client': 2.0.0-beta.23
-      '@aurelia/kernel': 2.0.0-beta.23
-      '@aurelia/metadata': 2.0.0-beta.23
-      '@aurelia/platform': 2.0.0-beta.23
-      '@aurelia/platform-browser': 2.0.0-beta.23
-      '@aurelia/runtime': 2.0.0-beta.23
-      '@aurelia/runtime-html': 2.0.0-beta.23
-      '@aurelia/template-compiler': 2.0.0-beta.23
 
   autoprefixer@10.4.21(postcss@8.5.3):
     dependencies:

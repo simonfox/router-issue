@@ -8,8 +8,9 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@aurelia/router-lite": "2.0.0-beta.23",
-    "aurelia": "latest"
+    "@aurelia/route-recognizer": "link:..\\aurelia\\packages\\route-recognizer",
+    "@aurelia/router-lite": "link:..\\aurelia\\packages\\router-lite",
+    "aurelia": "link:..\\aurelia\\packages\\aurelia"
   },
   "devDependencies": {
     "@aurelia/plugin-gulp": "latest",
